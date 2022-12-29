@@ -1,0 +1,6 @@
+lines
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints
+generated/
+.DS_Store
