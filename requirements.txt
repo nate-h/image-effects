@@ -3,6 +3,5 @@ jupyter
 Pillow
 matplotlib
 scipy
-pycairo
 opencv-python
 scikit-learn

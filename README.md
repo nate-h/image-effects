@@ -1,19 +1,11 @@
 # Image Effects
 
-The goal of this repo is to learn how to manipulate images using python.
-There are 10 manipulations I intend to create:
+The goal of this repo is to come up with several dozen ways to manipulate
+python images. View [run.ipynb](./run.ipynb) to see the full results.
 
-- [x] hue mapping
-- [x] 4 gamma corrected side by side
-- [ ] Neon glow
-- [ ] Separate rgb and draw 3 sep drawings
-- [ ] Halftone
-- [ ] Lines
-- [ ] Something using scipy geometric transform
-- [ ] Layers and messing with alpha... Use text?
-- [ ] Melting
-- [ ] Brush
-- [ ] Pixelate and reduce number of colors
+The effects are roughly ordered from easiest to hardest to implement.
+
+
 
 ## Create environment
 

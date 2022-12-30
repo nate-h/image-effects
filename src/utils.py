@@ -5,6 +5,9 @@ import os
 import cv2
 
 
+def load_rgb(path: str):
+    return cv2.cvtColor(cv2.imread(path), cv2.COLOR_BGR2RGB)
+
 def save_gray(garr: np.ndarray, name: str):
     """Saves a 2D grayscale image."""
     image2 = Image.fromarray(np.uint8(garr), "L")
