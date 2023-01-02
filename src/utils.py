@@ -10,14 +10,13 @@ def load_rgb(path: str):
 
 def plot(rows, cols, *images: tuple[str, np.ndarray], figsize: None | tuple[int, int] = None):
     """Generically plots images and their titles while removing the axis."""
-    # Single image.
-    if rows == cols == 1:
-        plt.title(images[0][0])
-        plt.imshow(images[0][1])
-        plt.axis("off")
-        return
-    # Many images.
     f, axs = plt.subplots(rows, cols, figsize=figsize)
+    # Normalize axs.
+    if rows == cols == 1:
+        axs = [axs]
+    elif rows > 1:
+        axs = axs.flatten()
+    # Plot.
     for index, (title, image) in enumerate(images):
         if image.ndim == 2:
             axs[index].imshow(image, cmap="gray")
