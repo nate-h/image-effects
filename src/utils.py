@@ -8,7 +8,10 @@ import cv2
 def load_rgb(path: str):
     return cv2.cvtColor(cv2.imread(path), cv2.COLOR_BGR2RGB)
 
-def plot(rows, cols, *images: tuple[str, np.ndarray], figsize: None | tuple[int, int] = None):
+
+def plot(
+    rows, cols, *images: tuple[str, np.ndarray], figsize: None | tuple[int, int] = None
+):
     """Generically plots images and their titles while removing the axis."""
     f, axs = plt.subplots(rows, cols, figsize=figsize)
     # Normalize axs.
@@ -22,9 +25,10 @@ def plot(rows, cols, *images: tuple[str, np.ndarray], figsize: None | tuple[int,
             axs[index].imshow(image, cmap="gray")
         else:
             axs[index].imshow(image)
-        axs[index].axis('off')
+        axs[index].axis("off")
         axs[index].title.set_text(title)
     f.tight_layout()
+
 
 def save_gray(garr: np.ndarray, name: str):
     """Saves a 2D grayscale image."""
