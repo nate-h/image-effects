@@ -1,7 +1,5 @@
-from PIL import Image
 import numpy as np
 from matplotlib import pyplot as plt
-import os
 import cv2
 
 
@@ -28,13 +26,6 @@ def plot(
         axs[index].axis("off")
         axs[index].title.set_text(title)
     f.tight_layout()
-
-
-def save_gray(garr: np.ndarray, name: str):
-    """Saves a 2D grayscale image."""
-    image2 = Image.fromarray(np.uint8(garr), "L")
-    os.makedirs("generated", exist_ok=True)
-    image2.save(f"generated/{name}")
 
 
 def adjust_exponential(image: np.ndarray, gamma=1.0):

@@ -1,6 +1,5 @@
 numpy
 jupyter
-Pillow
 matplotlib
 scipy
 opencv-python
