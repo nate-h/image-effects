@@ -1,8 +1,9 @@
 # Image Effects
 
-The goal of this repo is to come up with several dozen ways to manipulate
-python images. View [run.ipynb](./run.ipynb) to see the full results.
-
+I've been wanting to recreate some photoshop effects using mostly numpy and opencv.
+Started doing so in this [notebook](./run.ipynb) and got carried away just
+having fun with opencv. Managed to create a couple dozen trivial examples with
+more to come when I have free time :)
 
 ## Create environment
 
